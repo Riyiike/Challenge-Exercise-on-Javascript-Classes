@@ -1,14 +1,12 @@
-# Challenge-Exercise-on-Javascript-Classes
-
-## Suppose that you're working in a small town administration,
-
-## and you're in charge of two town elements :
-
+/*
+Suppose that you're working in a small town administration,
+and you're in charge of two town elements :
 1. Parks
-   2.Streets
+2.Streets 
 
 Its a very small town, so right now there are only 3 parks
 and 4 streets. All park and streets have a name and build year.
+
 
 At an end-of-year meeting , your boss wants a final report with the following :
 
@@ -18,10 +16,14 @@ At an end-of-year meeting , your boss wants a final report with the following :
 
 3. The sum of the park that has more than 1000 trees
 
-4. Total and average length of the town's streets
+4. Total and average length of the town's streets 
 
-5. Size classification of all streets: tiny/small/normal/big/huge . If the size is unknown ,the default is normal
+5. Size classification  of all streets: tiny/small/normal/big/huge . If the size is unknown ,the default is normal
 
 All the report data should be printed to the console .
 
 HINT : Use the ES6 features : classes, subclasses , template strings ,default parameters ,maps,arrows function , destructuring etc.
+
+
+
+*/
