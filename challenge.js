@@ -24,6 +24,27 @@ All the report data should be printed to the console .
 
 HINT : Use the ES6 features : classes, subclasses , template strings ,default parameters ,maps,arrows function , destructuring etc.
 
-
-
 */
+
+
+class TownElement {
+    constructor(name, yearOfBuild) {
+        this.name = name;
+        this.yearOfBuild = yearOfBuild;
+    }
+}
+
+
+class Park extends Element {
+    constructor(name, yearOfBuild, area, numTrees) {
+        super(name, yearOfBuild);
+        this.area = area;
+        this.numTrees = numTrees;
+    }
+
+    treeDensity() {
+        const density = this.numTrees /
+            this.area;
+        console.log(`${this.name} has a tree density of ${density} trees per square km.`)
+    }
+}

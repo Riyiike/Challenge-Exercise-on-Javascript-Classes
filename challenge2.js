@@ -1,5 +1,5 @@
 /*
-  EXAMPLE TASK:
+  TASK 1
     - Write an Airplane class whose constructor initializes `name` from an argument.
     - All airplanes built with Airplane should initialize with an `isFlying` property of false.
     - Give airplanes the ability to `.takeOff()` and `.land()`:
@@ -7,7 +7,7 @@
         + If a plane lands, its `isFlying` property gets set to false.
 */
 
-// EXAMPLE SOLUTION CODE:
+// SOLUTION CODE:
 class Airplane {
     constructor(name) {
         this.name = name;
@@ -21,14 +21,9 @@ class Airplane {
     }
 }
 
-/*
-// 👇 COMPLETE YOUR WORK BELOW 👇
-// 👇 COMPLETE YOUR WORK BELOW 👇
-// 👇 COMPLETE YOUR WORK BELOW 👇
-*/
 
 /*
-  TASK 1
+  TASK 2
     - Write a Person class whose constructor initializes `name` and `age` from arguments.
     - All instances of Person should also initialize with an empty `stomach` array.
     - Give instances of Person the ability to `.eat("someFood")`:
@@ -41,11 +36,15 @@ class Airplane {
 */
 
 class Person {
-
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+        this.stomach = [];
+    }
 }
 
 /*
-  TASK 2
+  TASK 3
     - Write a Car class whose constructor initializes `model` and `milesPerGallon` from arguments.
     - All instances built with Car:
         + should initialize with a `tank` at 0
@@ -58,12 +57,10 @@ class Person {
         + The `drive` method should return a string "I ran out of fuel at x miles!" x being `odometer`.
 */
 
-class Car {
-
-}
+class Car {}
 
 /*
-  TASK 3
+  TASK 4
     - Write a Lambdasian class.
     - Its constructor takes a single argument - an object with the following keys:
         + name
@@ -74,12 +71,10 @@ class Car {
         + Speaking should return a phrase `Hello my name is {name}, I am from {location}`.
         + {name} and {location} of course come from the instance's own properties.
 */
-class Lambdasian {
-
-}
+class Lambdasian {}
 
 /*
-  TASK 4
+  TASK 5
     - Write an Instructor class extending Lambdasian.
     - Its constructor takes a single argument - an object with the following keys:
         + All the keys used to initialize instances of Lambdasian.
@@ -92,12 +87,10 @@ class Lambdasian {
         + `demo` receives a `subject` string as an argument and returns the phrase 'Today we are learning about {subject}' where subject is the param passed in.
         + `grade` receives a `student` object and a `subject` string as arguments and returns '{student.name} receives a perfect score on {subject}'
 */
-class Instructor {
-
-}
+class Instructor {}
 
 /*
-  TASK 5
+  TASK 6
     - Write a Student class extending Lambdasian.
     - Its constructor takes a single argument -  an object with the following keys:
         + All the keys used to initialize instances of Lambdasian.
@@ -111,12 +104,10 @@ class Instructor {
         + `PRAssignment` a method that receives a subject as an argument and returns `student.name has submitted a PR for {subject}`
         + `sprintChallenge` similar to PRAssignment but returns `student.name has begun sprint challenge on {subject}`
 */
-class Student {
-
-}
+class Student {}
 
 /*
-  TASK 6
+  TASK 7
     - Write a ProjectManager class extending Instructor.
     - Its constructor takes a single argument - an object with the following keys:
         + All the keys used to initialize instances of Instructor.
@@ -128,9 +119,7 @@ class Student {
         + `standUp` a method that takes in a slack channel and returns `{name} announces to {channel}, @channel standy times!`
         + `debugsCode` a method that takes in a student object and a subject and returns `{name} debugs {student.name}'s code on {subject}`
 */
-class ProjectManager {
-
-}
+class ProjectManager {}
 
 /*
   STRETCH PROBLEM (no tests!)
@@ -145,26 +134,26 @@ class ProjectManager {
 ///////// END OF CHALLENGE /////////
 ///////// END OF CHALLENGE /////////
 if (typeof exports !== 'undefined') {
-    module.exports = module.exports || {}
+    module.exports = module.exports || {};
     if (Airplane) {
-        module.exports.Airplane = Airplane
+        module.exports.Airplane = Airplane;
     }
     if (Person) {
-        module.exports.Person = Person
+        module.exports.Person = Person;
     }
     if (Car) {
-        module.exports.Car = Car
+        module.exports.Car = Car;
     }
     if (Lambdasian) {
-        module.exports.Lambdasian = Lambdasian
+        module.exports.Lambdasian = Lambdasian;
     }
     if (Instructor) {
-        module.exports.Instructor = Instructor
+        module.exports.Instructor = Instructor;
     }
     if (Student) {
-        module.exports.Student = Student
+        module.exports.Student = Student;
     }
     if (ProjectManager) {
-        module.exports.ProjectManager = ProjectManager
+        module.exports.ProjectManager = ProjectManager;
     }
 }
